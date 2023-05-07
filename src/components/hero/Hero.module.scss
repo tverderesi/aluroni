@@ -2,12 +2,16 @@
 @import "styles/breakpoints";
 
 .header {
-    align-items: center;
+
     background-color: #dd0000;
     background-repeat: no-repeat;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: baseline;
     height: 20rem;
     padding: 0rem $padding-x;
+    position: relative;
 
     @media (max-width: $desktop_xsm) {
         padding: 0rem $padding-x-mobile;
@@ -25,14 +29,24 @@
         color: white;
         font-size: 3rem;
         min-width: 25rem;
+        font-weight:900;
+
+        &__lighter {
+            font-weight: 300;
+        }
 
     }
 }
 
 
 .pasta {
-    height: 4rem;
-    width: 4rem;
-    margin-right: 2rem;
+    height: 10rem;
+    width: 10rem;
+
+
     fill: white;
+    position: absolute;
+ 
+    left: calc(50vw - 30rem);
+    top: 4rem;
 }

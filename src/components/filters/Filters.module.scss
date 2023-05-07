@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.filters {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  &__filter {
+    align-items: center;
+    background-color: $grey;
+    border: none;
+    border-radius: px;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    height: 2.5rem;
+    justify-content: center;
+    width: 10rem;
+    &--active {
+      background-color: $blue;
+      color: white;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

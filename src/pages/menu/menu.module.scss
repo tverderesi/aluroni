@@ -2,17 +2,7 @@
 @import "styles/breakpoints";
 
 
-.btn {
-    border-radius: 4px;
-    background: #2B7DE9;
-    color: white;
-    padding: .75rem 1.5rem;
-    border: none;
-}
 
-.btn:active{
-    background: #1c60b9;
-}
 
 
 .header {
@@ -43,25 +33,36 @@
     }
 }
 
-.food-menu {
-    padding: 50px $padding-x;
+.foodMenu {
+    padding: 3rem $padding-x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (max-width: $desktop_xsm) {
-        padding: 50px $padding-x-mobile;
+        padding: 3rem $padding-x-mobile;
     }
 
     @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-        padding: 50px $padding-x-sm;
+        padding: 3rem $padding-x-sm;
     }
 
     @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-        padding: 50px $padding-x-md;
+        padding: 3rem $padding-x-md;
     }
 
     &__title {
         color: $dark;
         font-size: 3rem;
         margin-bottom: 2rem;
+    }
+    &__filters {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        width: 100%;
     }
 }
 
