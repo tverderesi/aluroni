@@ -1,0 +1,38 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+.header {
+    align-items: center;
+    background-color: #dd0000;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 20rem;
+    padding: 0rem $padding-x;
+
+    @media (max-width: $desktop_xsm) {
+        padding: 0rem $padding-x-mobile;
+    }
+
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding: 0rem $padding-x-sm;
+    }
+
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding: 0rem $padding-x-md;
+    }
+
+    &__text {
+        color: white;
+        font-size: 3rem;
+        min-width: 25rem;
+
+    }
+}
+
+
+.pasta {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    fill: white;
+}

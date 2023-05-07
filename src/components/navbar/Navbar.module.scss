@@ -1,0 +1,22 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+.menu {
+    padding: 1.5rem $padding-x;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $desktop_xsm) {
+        padding: 1.5rem $padding-x-mobile;
+    }
+
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding: 1.5rem $padding-x-sm;
+    }
+
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding: 1.5rem $padding-x-md;
+    }
+}
