@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Reset",
+    "value": ""
+  },
+  {
+    "name": "Servings",
+    "value": "servings"
+  },
+  {
+    "name": "People Served",
+    "value": "people_served"
+  },
+  {
+    "name": "Price",
+    "value": "price"
+  }
+]

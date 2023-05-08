@@ -1,0 +1,9 @@
+.dishes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  margin-top: 2.5rem;
+}

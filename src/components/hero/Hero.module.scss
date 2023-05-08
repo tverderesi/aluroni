@@ -2,51 +2,97 @@
 @import "styles/breakpoints";
 
 .header {
+  background: linear-gradient(
+    -45deg,
+    #009246 0%,
+    #009246 10%,
+    #ffffff 10%,
+    #ffffff 20%,
+    #ce2b37 20%,
+    #ce2b37 80%,
+    #ffffff 80%,
+    #ffffff 90%,
+    #009246 90%,
+    #009246 100%
+  );
 
-    background-color: #dd0000;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: baseline;
-    height: 20rem;
-    padding: 0rem $padding-x;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: baseline;
+  height: 20rem;
+  padding: 0rem $padding-x;
+  position: relative;
+  box-shadow: $inset-shadow-stronger;
 
+  @media (max-width: $desktop_xsm) {
+    padding: 0rem $padding-x-mobile;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 0rem $padding-x-sm;
+  }
+
+  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    padding: 0rem $padding-x-md;
+  }
+
+  &__text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
     @media (max-width: $desktop_xsm) {
-        padding: 0rem $padding-x-mobile;
+      font-size: 2.5rem;
     }
 
     @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-        padding: 0rem $padding-x-sm;
+      font-size: 3rem;
     }
 
-    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-        padding: 0rem $padding-x-md;
+    @media (min-width: $desktop_sm) {
+      font-size: 4rem;
     }
 
-    &__text {
-        color: white;
-        font-size: 3rem;
-        min-width: 25rem;
-        font-weight:900;
-
-        &__lighter {
-            font-weight: 300;
-        }
-
+    &__lighter {
+      color: white;
+      font-size: 2rem;
+      font-weight: 900;
+      padding: 0;
+      margin: 0;
+      font-weight: 300;
     }
+  }
 }
 
-
 .pasta {
-    height: 10rem;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 4rem;
+  @media (max-width: $desktop_xsm) {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 0.6rem;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 0.8rem;
+  }
+
+  @media (min-width: $desktop_sm) {
     width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
+  }
+  fill: white;
+}
 
-
-    fill: white;
-    position: absolute;
- 
-    left: calc(50vw - 30rem);
-    top: 4rem;
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }

@@ -1,18 +1,18 @@
 export const filters = [
   {
-    label: "Massas",
+    label: "Pasta",
     id: 1,
   },
   {
-    label: "Carnes",
+    label: "Meat Dishes",
     id: 2,
   },
   {
-    label: "Combos",
+    label: "Combo Dishes",
     id: 3,
   },
   {
-    label: "Veganos",
+    label: "Vegan Dishes",
     id: 4,
   },
 ];

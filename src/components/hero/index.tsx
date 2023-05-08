@@ -5,10 +5,10 @@ export function Hero() {
   return (
     <header className={styles.header}>
       <Pasta className={styles.pasta} />
-      <h1 className={styles.header__text}>
-        Aluroni {""}
-        <span className={styles.header__text__lighter}>Pasta and Code</span>
-      </h1>
+      <div className={styles.flexCol}>
+        <h1 className={styles.header__text}>Aluroni</h1>
+        <h2 className={styles.header__text__lighter}>Pasta and Code</h2>
+      </div>
     </header>
   );
 }

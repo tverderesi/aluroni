@@ -2,12 +2,13 @@ import React from "react";
 import { filters as filtersList } from "./filters";
 import styles from "./Filters.module.scss";
 import classNames from "classnames";
-import { SearchContext } from "context/SearchContext";
+import { AppContext } from "context/AppContext";
+import Sorter from "components/sorter";
 
 type Filter = { id: number; label: string };
 
 export function Filters() {
-  const { filters, dispatch } = React.useContext(SearchContext);
+  const { filters, dispatch } = React.useContext(AppContext);
   console.log(styles["filters__filter--active"]);
   const handleFilterClick = (filter: Filter) => {
     dispatch({ type: "SET_FILTER", payload: filter });
@@ -28,6 +29,7 @@ export function Filters() {
           </button>
         );
       })}
+      <Sorter />
     </div>
   );
 }

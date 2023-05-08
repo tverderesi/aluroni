@@ -2,7 +2,7 @@
 @import "styles/breakpoints";
 
 .menu {
-    padding: 1.5rem $padding-x;
+    padding: 1.5rem calc($padding-x + 1rem);
     display: flex;
     flex-direction: row;
     align-items: center;

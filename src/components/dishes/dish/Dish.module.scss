@@ -1,0 +1,110 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+$pasta: #d73b3b;
+$meat: #30201e;
+$combos: #e6c864;
+$vegan: #80aa40;
+
+.dish {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+
+  &__picture {
+    min-width: 16rem;
+  margin: auto;
+ 
+    @media (max-width: $desktop_xsm) {
+      width: 100%;
+    }
+    img {
+      border-radius: 1rem;
+      width: 100%;
+      box-shadow: $inset-shadow-stronger;
+    }
+  }
+  &__description {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+    @media (max-width: $desktop_xsm) {
+      flex-direction: row;
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+  &__title {
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $dark-grey;
+      font-size: 1.3rem;
+      font-weight: 600;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    
+    max-width: 44rem;
+    @media (max-width: $desktop_xsm) {
+      justify-content: flex-end;
+    }
+    @media (max-width: $mobile) {
+      justify-content: flex-start;
+    }
+    > div {
+      margin: .75rem;
+    }
+  }
+  &__type {
+    align-items: center;
+  border-radius: 1.25rem;
+    display: flex;
+    font-weight: bold;
+    height: 2.5rem;
+    justify-content: center;
+    padding: 10px 30px;
+    &__pasta {
+      background-color: $pasta;
+      color: white;
+    }
+    &__meat {
+      background-color: $meat;
+      color: white;
+    }
+    &__combos {
+      background-color: $combos;
+    }
+    &__vegan {
+      background-color: $vegan;
+    }
+  }
+  &__servings,
+  &__people_served,
+  &__price {
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    justify-content: center;
+  }
+  &__price {
+    color: $red;
+    font-size: 1.7rem;
+  }
+  &__people_served span {
+    margin-right: .5rem;
+  }
+}

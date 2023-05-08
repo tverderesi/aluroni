@@ -1,0 +1,63 @@
+@import "styles/variables";
+
+.sorter {
+  align-items: center;
+  background-color: $grey;
+  border: none;
+ border-radius: 1.25rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 2.5rem;
+  justify-content: space-around;
+  width: 10rem;
+  padding: 0 1rem;
+  position: relative;
+  box-shadow: $shadow;
+
+
+  &--open {
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+  &--active {
+    background-color: $dark-green;
+    color: white;
+  }
+  &__options {
+
+    display: none;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    &--active {
+      display: flex;
+    }
+     
+    
+    
+  }
+  &__option {
+    box-shadow: $shadow;
+    align-items: center;
+    background-color: $grey;
+    border-top: 2px solid $light-grey;
+    box-sizing: border-box;
+    color: $black;
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    width: inherit;
+    &:hover,
+    &--active {
+      background-color: $dark-green;
+      cursor: pointer;
+      color: white;
+    }
+    &:last-of-type {
+      border-radius: 0 0 1.25rem 1.25rem;
+    }
+   
+  }
+}

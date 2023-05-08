@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Mediterranean Pasta",
+    "description": "Spaghetti pasta with seafood and spices, Chef's specialty.",
+    "photo": "/assets/dishes/mediterranean_pasta.png",
+    "size": 400,
+    "serving": 2,
+    "price": 73.0,
+    "id": 1,
+    "category": {
+      "id": 1,
+      "label": "Pasta"
+    },
+    "allergenics": ["seafood", "milk", "egg", "wheat"]
+  },
+  {
+    "title": "Chef's Pasta",
+    "description": "Tagliolini Pasta with seafood and curry, Chef's specialty.",
+    "photo": "/assets/dishes/chefs_pasta.png",
+    "size": 400,
+    "serving": 2,
+    "price": 54.0,
+    "id": 2,
+    "category": {
+      "id": 1,
+      "label": "Pasta"
+    },
+
+    "allergenics": ["seafood", "milk", "egg", "wheat"]
+  },
+
+  {
+    "title": "Chili Pasta",
+    "description": "Fettuccine pasta with chili sauce and spices.",
+    "photo": "/assets/dishes/chili_pasta.png",
+    "size": 350,
+    "serving": 1,
+    "price": 58.0,
+    "id": 3,
+    "category": {
+      "id": 1,
+      "label": "Pasta"
+    },
+    "allergenics": ["wheat"]
+  },
+  {
+    "title": "Chef's Salad with Grilled Salmon",
+    "description": "House salad (lettuce, arugula, carrot) with salmon.",
+    "photo": "/assets/dishes/chefs_salad.png",
+    "size": 450,
+    "serving": 1,
+    "price": 42.0,
+    "id": 4,
+    "category": {
+      "id": 2,
+      "label": "Meat"
+    },
+    "allergenics": ["fish"]
+  },
+  {
+    "title": "Steak and Fries",
+    "description": "Beef steak (150g) on the griddle, with French fries. Served with rice and sauces.",
+    "photo": "/assets/dishes/steak_and_fries.png",
+    "size": 550,
+    "serving": 2,
+    "price": 86.0,
+    "id": 5,
+    "category": {
+      "id": 2,
+      "label": "Meat"
+    },
+    "allergenics": []
+  },
+  {
+    "title": "Minced Brazilian Steak with Vegetables and Pasta",
+    "description": "400g of chopped picanha, with grilled vegetables and pasta chosen by the customer.",
+    "photo": "/assets/dishes/minced_brazilian_steak.png",
+    "size": 850,
+    "serving": 3,
+    "price": 123.0,
+    "id": 6,
+    "category": {
+      "id": 3,
+      "label": "Combos"
+    },
+    "allergenics": ["egg", "wheat"]
+  },
+  {
+    "title": "Vegetable Lasagna",
+    "description": "Delicious vegan lasagna made with roasted eggplant and homemade gluten-free spinach pasta.",
+    "photo": "/assets/dishes/vegetable_lasagna.png",
+    "size": 350,
+    "serving": 1,
+    "price": 45.0,
+    "id": 7,
+    "category": {
+      "id": 4,
+      "label": "Vegan"
+    },
+    "allergenics": []
+  },
+  {
+    "title": "Special Salad",
+    "description": "Salad with avocado, mango, lettuce, chickpeas, and more.",
+    "photo": "/assets/dishes/special_salad.png",
+    "size": 350,
+    "serving": 1,
+    "price": 37.0,
+    "id": 8,
+    "category": {
+      "id": 4,
+      "label": "Vegan"
+    },
+    "allergenics": ["peanut", "tree_nut"]
+  },
+  {
+    "title": "Meatballs",
+    "description": "Portion of meatballs with sour cream, onion, and spices. Served with rice or pasta.",
+    "photo": "/assets/dishes/meatballs.png",
+    "size": 740,
+    "serving": 3,
+    "price": 120.0,
+    "id": 9,
+    "category": {
+      "id": 3,
+      "label": "Combos"
+    },
+    "allergenics": ["egg", "wheat", "milk", "soy"]
+  }
+]

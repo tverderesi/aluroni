@@ -1,12 +1,10 @@
-import { Search } from "components/search";
-import { SearchProvider } from "context/SearchContext";
+import { AppProvider } from "context/AppContext";
 import { Menu } from "pages/menu";
-import React from "react";
 
 export default function App() {
   return (
-    <SearchProvider>
+    <AppProvider>
       <Menu />
-    </SearchProvider>
+    </AppProvider>
   );
 }

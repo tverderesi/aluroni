@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import style from "./Search.module.scss";
-import { SearchContext } from "context/SearchContext";
+import { AppContext } from "context/AppContext";
 
 export function Search() {
-  const { search, dispatch } = useContext(SearchContext);
+  const { search, dispatch } = useContext(AppContext);
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({ type: "SET_SEARCH", payload: e.target.value });
   };
