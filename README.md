@@ -1,5 +1,7 @@
 # Aluroni
 
+## Project Status: ✅ Completed.
+
 > This project is for studying purposes as part of Boticário's Desenvolve Program.
 
 A React application for managing a restaurant menu with various filters and search functionality.
