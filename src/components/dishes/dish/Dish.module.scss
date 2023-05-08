@@ -13,15 +13,15 @@ $vegan: #80aa40;
 
   &__picture {
     min-width: 16rem;
-  margin: auto;
- 
+    margin: auto;
+
     @media (max-width: $desktop_xsm) {
       width: 100%;
     }
     img {
       border-radius: 1rem;
       width: 100%;
-      box-shadow: $inset-shadow-stronger;
+      box-shadow: inset 2px 2px rgba(0, 0, 0, 1);
     }
   }
   &__description {
@@ -31,20 +31,31 @@ $vegan: #80aa40;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 20px;
+    justify-self: start;
     @media (max-width: $desktop_xsm) {
+      margin-left: 0;
       flex-direction: row;
       margin-top: 20px;
       padding: 0;
+      width: 100%;
     }
   }
+
   &__title {
+    @media (max-width: $desktop_xsm) {
+      margin-left: 0;
+      flex-direction: row;
+      margin-top: 20px;
+      padding: 0;
+      width: 100%;
+    }
     h2 {
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 20px;
     }
     p {
-      color: $dark-grey;
+      color: #606060;
       font-size: 1.3rem;
       font-weight: 600;
       max-width: 600px;
@@ -52,11 +63,12 @@ $vegan: #80aa40;
     }
   }
   &__tags {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 1.5rem;
-    
+
     max-width: 44rem;
     @media (max-width: $desktop_xsm) {
       justify-content: flex-end;
@@ -65,12 +77,13 @@ $vegan: #80aa40;
       justify-content: flex-start;
     }
     > div {
-      margin: .75rem;
+      margin: 0.75rem;
+      margin-left: 0;
     }
   }
   &__type {
     align-items: center;
-  border-radius: 1.25rem;
+    border-radius: 1.25rem;
     display: flex;
     font-weight: bold;
     height: 2.5rem;
@@ -105,6 +118,6 @@ $vegan: #80aa40;
     font-size: 1.7rem;
   }
   &__people_served span {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 }

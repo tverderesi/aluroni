@@ -111,7 +111,7 @@
       "id": 4,
       "label": "Vegan"
     },
-    "allergenics": ["peanut", "tree_nut"]
+    "allergenics": ["peanut", "tree nut"]
   },
   {
     "title": "Meatballs",

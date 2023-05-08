@@ -1,7 +1,7 @@
 import style from "./Allergenics.module.scss";
 
 const Allergenics = ({ allergenics }: { allergenics: string[] }) => {
-  const allergenicIcons = [
+  const allergenicLib = [
     { name: "peanut", label: "Peanut" },
     { name: "tree_nut", label: "Tree Nut" },
     { name: "milk", label: "Milk" },
@@ -17,19 +17,20 @@ const Allergenics = ({ allergenics }: { allergenics: string[] }) => {
       <span className="material-symbols-outlined">info</span>
       Allergenics:
       <div className={style.icons}>
-        {allergenicIcons.map((allergenic, idx) => {
-          if (allergenics.includes(allergenic.name)) {
+        {allergenics.length > 0 ? (
+          allergenics.map((allergenic, idx) => {
             return (
-              <span key={allergenic.name} title={allergenic.label}>
-                {allergenic.name[0].toUpperCase() + allergenic.name.slice(1)}
-                {idx < allergenicIcons.length - 1 && allergenics.length > 1
+              <span>
+                {allergenic}
+                {idx < allergenics.length - 1 && allergenics.length > 1
                   ? ","
                   : "."}
               </span>
             );
-          }
-          return null;
-        })}
+          })
+        ) : (
+          <span>none.</span>
+        )}
       </div>
     </div>
   );
